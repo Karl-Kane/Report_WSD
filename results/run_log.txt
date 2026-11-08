@@ -1,0 +1,33 @@
+Устройство: NVIDIA GeForce RTX 4060 Laptop GPU
+[seed 0] cosine(10) = 0.8696   (89 c)
+[seed 0] cosine(20) = 0.9107   (232 c)
+[seed 0] cosine(40) = 0.9298   (539 c)
+[seed 0] const@10 = 0.8294   WSD(10) = 0.8855
+[seed 0] const@20 = 0.8496   WSD(20) = 0.9232
+[seed 0] const@40 = 0.8555   WSD(40) = 0.9347
+[seed 0] Schedule-Free: 10: 0.8609, 20: 0.9029, 40: 0.9150
+[seed 1] cosine(10) = 0.8796   (1363 c)
+[seed 1] cosine(20) = 0.9126   (1508 c)
+[seed 1] cosine(40) = 0.9306   (1812 c)
+[seed 1] const@10 = 0.8139   WSD(10) = 0.8927
+[seed 1] const@20 = 0.8398   WSD(20) = 0.9235
+[seed 1] const@40 = 0.8548   WSD(40) = 0.9360
+[seed 1] Schedule-Free: 10: 0.8512, 20: 0.8987, 40: 0.9152
+[seed 2] cosine(10) = 0.8727   (2629 c)
+[seed 2] cosine(20) = 0.9104   (2773 c)
+[seed 2] cosine(40) = 0.9330   (3077 c)
+[seed 2] const@10 = 0.8142   WSD(10) = 0.8857
+[seed 2] const@20 = 0.8459   WSD(20) = 0.9191
+[seed 2] const@40 = 0.8591   WSD(40) = 0.9321
+[seed 2] Schedule-Free: 10: 0.8744, 20: 0.9060, 40: 0.9175
+
+| стратегия | 10 эпох | 20 эпох | 40 эпох |
+|---|---|---|---|
+| cosine(B) | 87.40 ± 0.42 | 91.12 ± 0.10 | 93.11 ± 0.14 |
+| cosine(Tmax)→B | 83.77 ± 0.68 | 87.79 ± 0.56 | 93.11 ± 0.14 |
+| const | 81.92 ± 0.72 | 84.51 ± 0.40 | 85.65 ± 0.19 |
+| WSD | 88.80 ± 0.33 | 92.19 ± 0.20 | 93.43 ± 0.16 |
+| Schedule-Free | 86.22 ± 0.95 | 90.25 ± 0.30 | 91.59 ± 0.11 |
+
+Вычислений на все бюджеты: cosine(B) — 70 эпох, WSD — 46 эпох, Schedule-Free — 40 эпох.
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU, время: 63.7 мин.
